@@ -57,7 +57,7 @@ const data = computed(() => ({
       left: 440,
       top: 120,
       width: 100,
-      img: '/images/logo.png'
+      img: '/logo.png'
     }
   ]
 }))

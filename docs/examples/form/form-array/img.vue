@@ -11,14 +11,14 @@ const option = ref({
       label: '图片框',
       prop: 'array',
       type: 'img',
-      value: ['/images/logo.png']
+      value: ['/logo.png']
     },
     {
       label: '单个图片框',
       prop: 'array',
       alone: true,
       type: 'img',
-      value: ['/images/logo.png']
+      value: ['/logo.png']
     }
   ]
 });

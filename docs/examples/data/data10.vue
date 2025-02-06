@@ -11,18 +11,18 @@ const option = ref({
         alert(JSON.stringify(item));
       },
       title: 'xxx',
-      imgsrc: '/images/logo.png',
+      imgsrc: '/logo.png',
       headimg: [
         {
-          src: '/images/logo.png',
+          src: '/logo.png',
           name: 'xxx'
         },
         {
-          src: '/images/logo.png',
+          src: '/logo.png',
           name: 'xxx'
         },
         {
-          src: '/images/logo.png',
+          src: '/logo.png',
           name: 'xxx'
         },
       ],
@@ -36,18 +36,18 @@ const option = ref({
         alert(JSON.stringify(item));
       },
       title: 'xxx',
-      imgsrc: '/images/logo.png',
+      imgsrc: '/logo.png',
       headimg: [
         {
-          src: '/images/logo.png',
+          src: '/logo.png',
           name: 'xxx'
         },
         {
-          src: '/images/logo.png',
+          src: '/logo.png',
           name: 'xxx'
         },
         {
-          src: '/images/logo.png',
+          src: '/logo.png',
           name: 'xxx'
         },
       ],
@@ -60,18 +60,18 @@ const option = ref({
         alert(JSON.stringify(item));
       },
       title: 'xxx',
-      imgsrc: '/images/logo.png',
+      imgsrc: '/logo.png',
       headimg: [
         {
-          src: '/images/logo.png',
+          src: '/logo.png',
           name: 'xxx'
         },
         {
-          src: '/images/logo.png',
+          src: '/logo.png',
           name: 'xxx'
         },
         {
-          src: '/images/logo.png',
+          src: '/logo.png',
           name: 'xxx'
         },
       ],

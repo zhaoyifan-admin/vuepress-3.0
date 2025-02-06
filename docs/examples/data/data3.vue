@@ -13,7 +13,7 @@ const option = ref({
         alert(JSON.stringify(item));
       },
       name: 'xxx',
-      src: '/images/logo.png',
+      src: '/logo.png',
       text: 'xxxxxxxx',
       href: 'https://avuejs.com',
       target: '_blank'
@@ -23,7 +23,7 @@ const option = ref({
         alert(JSON.stringify(item));
       },
       name: 'xxx',
-      src: '/images/logo.png',
+      src: '/logo.png',
       text: 'xxxxxx',
       href: 'https://avuejs.com',
       target: '_blank'
@@ -33,7 +33,7 @@ const option = ref({
         alert(JSON.stringify(item));
       },
       name: 'xxx',
-      src: '/images/logo.png',
+      src: '/logo.png',
       text: 'xxxxx',
       href: 'https://avuejs.com',
       target: '_blank'

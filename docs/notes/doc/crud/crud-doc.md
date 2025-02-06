@@ -3,7 +3,7 @@ title: Crud属性文档
 createTime: 2024/12/10 11:23:08
 permalink: /doc/crud-doc/
 ---
-# Crud属性文档
+
 ``` js
 //crud组件全局配置
 app.use(Avue,{

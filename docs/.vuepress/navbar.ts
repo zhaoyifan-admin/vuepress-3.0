@@ -8,7 +8,8 @@ export const zhNavbar = defineNavbarConfig([
   {
     text: '文档',
     items: [{ text: '开发指南', link: '/homes/installation/' },
-    { text: 'CRUD组件', link: '/doc/crud-doc/' }
+    { text: 'CRUD组件', link: '/doc/crud-doc/' },
+    { text: 'FORM组件', link: '/form/form-doc/' }
     ], icon: 'material-symbols:article-outline'
   },
   {

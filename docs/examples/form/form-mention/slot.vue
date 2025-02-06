@@ -3,7 +3,7 @@
              v-model:form="form"
              ref="formRef">
     <template #province-type="{ item, value, label }">
-      <img src="/images/logo.png"
+      <img src="/logo.png"
            style="width:20px" />
       <span>{{ item.label }}</span>
     </template>
@@ -53,7 +53,7 @@ function setSelectImg (val) {
       const img = provinceRef.$el.querySelector('img');
       if (img) {
         img.setAttribute('style', `
-          background: url('/images/logo.png') no-repeat;
+          background: url('/logo.png') no-repeat;
           background-position: 10px center;
           background-size: 20px 20px;
           padding-left:20px;
