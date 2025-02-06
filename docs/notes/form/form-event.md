@@ -1,7 +1,7 @@
 ---
 title: 表单组件事件
 createTime: 2025/02/06 15:27:03
-permalink: /form/7x574t9r/
+permalink: /form/form-event/
 ---
 
 - `change`事件
