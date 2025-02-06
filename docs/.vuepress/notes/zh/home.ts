@@ -5,24 +5,8 @@ export const home = defineNoteConfig({
     link: '/homes/',
     sidebar: [
         'installation',
-        {
-            text: '全局配置',
-            prefix: 'global',
-            collapsed: false,
-            items: [
-                '@v2',
-                '@v3',
-            ],
-        },
-        {
-            text: '全局API',
-            prefix: 'api',
-            collapsed: false,
-            items: [
-                '@v2',
-                '@v3',
-            ],
-        },
+        'global',
+        'api',
         'locale',
     ],
 })

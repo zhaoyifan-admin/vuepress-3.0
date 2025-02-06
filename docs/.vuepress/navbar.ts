@@ -7,7 +7,7 @@ export const zhNavbar = defineNavbarConfig([
   { text: '归档', link: '/blog/archives/' },
   {
     text: '文档',
-    items: [{ text: '开发指南', link: '/doc/installation/' },
+    items: [{ text: '开发指南', link: '/homes/installation/' },
     { text: 'CRUD组件', link: '/doc/crud-doc/' }
     ], icon: 'material-symbols:article-outline'
   },

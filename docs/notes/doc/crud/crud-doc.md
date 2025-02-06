@@ -16,7 +16,7 @@ app.use(Avue,{
 | modelValue/v-model | 绑定值 | object | - | - |
 | data | 显示的数据 | array | - | - |
 | option | 表单配置项参考Option配置 | object | - | - |
-| before-open | 打开前的回调，会暂停Dialog的打开，done用于关闭Dialog,type为当前窗口的类型<el-tag size="small">3.5.2</el-tag>新增loading方法  | function | - | (done,type,loading)=>{} |
+| before-open | 打开前的回调，会暂停Dialog的打开，done用于关闭Dialog,type为当前窗口的类型新增loading方法  | function | - | (done,type,loading)=>{} |
 | before-close | 关闭前的回调，会暂停Dialog的关闭，done用于关闭Dialog,type为当前窗口的类型 | function | - | (done,type)=>{} |
 | permission   | 表格多个按钮权限控制，采用函数方式可以精确到行控制 | - | - | - |
 | v-model:search   | 搜索变量 | object | - | - |
@@ -98,7 +98,7 @@ app.use(Avue,{
 | defaultSort | 默认的排序列的 prop 和顺序。它的prop属性指定默认的排序的列，order指定默认排序的顺序 | object | ascending/ descending | ascending |
 | showSummary | 是否在表尾显示合计行| boolean | - | false |
 | showOverflowTooltip | 全局当内容过长被隐藏时显示 tooltip详请参考tooltip-options | boolean/object  | - | false |
-| scrollbarAlwaysOn<el-tag size="small">3.6.0</el-tag> | 总是显示滚动条 | boolean  | - | true |
+| scrollbarAlwaysOn | 总是显示滚动条 | boolean  | - | true |
 | tooltipEffect | 溢出的 tooltip 的 effect | string | dark/light | dark |
 | tooltipOptions  | 溢出 tooltip 的选项，参见 tooltip 组件 | object | - | left |
 | lazy | 是否懒加载子节点数据,会调用tree-load方法回调| boolean | - | false |
@@ -138,10 +138,10 @@ app.use(Avue,{
 | searchShowBtn | 表格搜索显隐按钮 | boolean | - | true |
 | refreshBtn | 表格刷新数据按钮| boolean | - | true |
 | copyBtn | 表格复制数据按钮| boolean | - | false |
-| gridBtn <el-tag size="small">3.4.0</el-tag> | 卡片模式切换按钮| boolean | - | true |
-| gridSpan <el-tag size="small">3.4.0</el-tag>| 卡片模式格栅| number | - |  8 |
-| gridBackgroundImage <el-tag size="small">3.4.0</el-tag>| 卡片模式背景图片| string | - |  - |
-| gridBackground <el-tag size="small">3.4.0</el-tag>| 卡片模式背景颜色| string/function | - |  - |
+| gridBtn  | 卡片模式切换按钮| boolean | - | true |
+| gridSpan | 卡片模式格栅| number | - |  8 |
+| gridBackgroundImage | 卡片模式背景图片| string | - |  - |
+| gridBackground | 卡片模式背景颜色| string/function | - |  - |
 | addTitle | 表格新增弹窗标题 | string | - | 新增 |
 | editTitle | 表格修改弹窗标题| boolean | - | 修改 |
 | viewTitle | 表格查看弹窗标题| boolean | - | 查看 |
@@ -229,9 +229,9 @@ app.use(Avue,{
 | editDisplay | 表单编辑时项是否显示 | boolean | — | true |
 | viewDisplay | 表单查看时项是否显示 | boolean | — | true |
 | resizable | 对应列是否可以通过拖动改变宽度（需要在option中border属性为真） | boolean | — | true |
-| render <el-tag size="small">3.4.2</el-tag>|列区域渲染使用的 | function | — | (h, { column, $index }) |
-| renderForm <el-tag size="small">3.4.2</el-tag>|列表单区域渲染使用的 | function | — | (h, { column, $index }) |
-| renderHeader <el-tag size="small">3.4.2</el-tag>|列标题 Label 区域渲染使用的 | function | — | (h, { column, $index }) |
+| render |列区域渲染使用的 | function | — | (h, { column, $index }) |
+| renderForm |列表单区域渲染使用的 | function | — | (h, { column, $index }) |
+| renderHeader |列标题 Label 区域渲染使用的 | function | — | (h, { column, $index }) |
 
 ### Events
 | 事件名称      | 说明   | 参数 |
@@ -258,13 +258,13 @@ app.use(Avue,{
 | header-contextmenu  | 当某一列的表头被鼠标右键点击时触发该事件 | (column, event) |
 | sort-change | 当表格的排序条件发生变化的时候会触发该事件 | ({ column, prop, order }) |
 | sortable-change | 行拖拽排序回调 | ({ newIndex,oldIndex }) |
-| column-sortable-change<el-tag size="small">3.5.2</el-tag>  | 行拖拽排序回调 | ({ newIndex,oldIndex }) |
+| column-sortable-change  | 行拖拽排序回调 | ({ newIndex,oldIndex }) |
 | filter-change | 当表格的筛选条件发生变化的时候会触发该事件，参数的值是一个对象，对象的 key 是 column 的 columnKey，对应的 value 为用户选择的筛选条件的数组。 | filters |
 | current-row-change | 当表格的当前行发生变化的时候会触发该事件，如果要高亮当前行，请打开表格的 highlightCurrentRow 属性 | currentRow, oldCurrentRow |
 | grid-status-change<el-tag size="small">3.4.7</el-tag> | table模式和 grid模式切换回调 | status |
 | header-dragend | 当拖动表头改变了列的宽度的时候会触发该事件 | (newWidth, oldWidth, column, event) |
 | expand-change | 当用户对某一行展开或者关闭的时候会触发该事件（展开行时，回调的第二个参数为 expandedRows；树形表格时第二参数为 expanded） | row, (expandedRows | expanded)|
-| scroll<el-tag size="small">3.6.0</el-tag> | 表格被用户滚动后触发 | ({scrollLeft,scrollTop}) |
+| scroll | 表格被用户滚动后触发 | ({scrollLeft,scrollTop}) |
 
 ### Methods
 | 事件名称      | 说明   | 参数 |
@@ -289,7 +289,7 @@ app.use(Avue,{
 | doLayout | 对 Table 进行重新布局。当 Table 或其祖先元素由隐藏切换为显示时，可能需要调用此方法 | — |
 | refreshTable | 进行重新初始化渲染 | —|
 | sort | 手动对 Table 进行排序。参数prop属性指定排序列，order指定排序顺序。| prop: string, order: string |
-| updateKeyChildren<el-tag size="small">3.6.0</el-tag> | 适用于 lazy Table, 需要设置 rowKey, 更新 key children | key:string, data:array |
+| updateKeyChildren | 适用于 lazy Table, 需要设置 rowKey, 更新 key children | key:string, data:array |
 
 
 ### Slot
@@ -305,13 +305,13 @@ app.use(Avue,{
 | search | 表格搜索|
 | searchMenu | 表格搜索菜单|
 | header | 表格头部|
-| body <el-tag size="small">3.4.3</el-tag>| 表格中部|
+| body | 表格中部|
 | page | 表格分页|
 | menu-left | 表格菜单左部分|
 | menu-right | 表格菜单右部分|
 | menu | 表格菜单|
-| menu-before <el-tag size="small">3.4.3</el-tag>| 表格菜单前|
+| menu-before | 表格菜单前|
 | menu-btn | 表格合并菜单|
-| menu-btn-before <el-tag size="small">3.4.3</el-tag>| 表格合并菜单前|
+| menu-btn-before | 表格合并菜单前|
 | menu-form | 表格弹窗菜单|
-| menu-form-before <el-tag size="small">3.4.3</el-tag>| 表格弹窗菜单前|
+| menu-form-before | 表格弹窗菜单前|
