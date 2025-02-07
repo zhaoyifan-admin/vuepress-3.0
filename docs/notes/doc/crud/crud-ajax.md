@@ -1,7 +1,7 @@
 ---
 title: 表格高级用法
 createTime: 2025/02/06 09:43:17
-permalink: /doc/crud-ajax/
+permalink: /doc/crud-ajax
 ---
 
 ## 表格初始化
