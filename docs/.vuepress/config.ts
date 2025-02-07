@@ -4,7 +4,7 @@ import {plumeTheme} from 'vuepress-theme-plume'
 import { searchPlugin } from '@vuepress-plume/plugin-search'
 
 export default defineUserConfig({
-    base: '/',
+    base: '/tvue/',
     lang: 'zh-CN',
     locales: {
         '/': {
